@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    name: Build and deploying Me Web UI
+    name: Build and deploying
     runs-on: ubuntu-latest
     environment: PRD
 

@@ -1,4 +1,4 @@
-export default {
+const data = {
   kind: 'youtube#videoListResponse',
   etag: 'uiC5RdDkcWPBUbEt5cFqV7HWKFI',
   items: [
@@ -5321,3 +5321,5 @@ export default {
     resultsPerPage: 50,
   },
 };
+
+export default data;

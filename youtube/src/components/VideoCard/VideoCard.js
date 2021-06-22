@@ -10,7 +10,7 @@ function VideoCard({ title, channel, views, when, thumbnails, publishedAt, durat
   return (
     <div className="video-card">
       <div className="thumbnail">
-        <img className="image" src={thumbnails.medium.url} />
+        <img className="image" src={thumbnails.medium.url} alt={title} />
         <div className="duration">
           {duration.replace('PT', '').replace('H', ':').replace('M', ':').replace('S', '')}
         </div>
@@ -25,7 +25,7 @@ function VideoCard({ title, channel, views, when, thumbnails, publishedAt, durat
       </div>
       <div className="content">
         <div className="avatar">
-          <img src={thumbnails.default.url} />
+          <img src={thumbnails.default.url} alt={channel} />
         </div>
         <div className="data">
           <div className="title">{title}</div>
