@@ -1,0 +1,41 @@
+name: Youtube clone deployment
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "youtube/**"
+
+jobs:
+  deploy:
+    name: Build and deploying Me Web UI
+    runs-on: ubuntu-latest
+    environment: PRD
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v2.1.4
+
+      - name: Installation of dependencies
+        working-directory: ./youtube
+        run: npm install
+
+      - name: Build
+        working-directory: ./youtube
+        run: yarn build
+
+      - name: Configure AWS credentials
+        working-directory: ./youtube/build
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Deploy
+        working-directory: ./youtube/build
+        run: aws s3 sync . s3://prd-me-mewebstacknesteds-rootdeploymentbucket3b5e-wii9a6y5zbor --acl bucket-owner-full-control

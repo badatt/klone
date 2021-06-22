@@ -1,0 +1,10 @@
+.main-content {
+  position: absolute;
+  display: flex;
+  top: 3.5rem;
+  left: 15rem;
+  flex-wrap: wrap;
+  width: calc(100% - 15rem);
+  z-index: -1;
+  background-color: #f1f1f1;
+}
