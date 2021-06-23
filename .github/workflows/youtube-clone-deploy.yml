@@ -37,4 +37,4 @@ jobs:
 
       - name: Deploy
         working-directory: ./youtube/build
-        run: aws s3 sync . s3://prd-me-mewebstacknesteds-youtubeclonedeploymentbu-jmf7ttlj2gq3 --acl bucket-owner-full-control
+        run: aws s3 sync . s3://prd-me-mewebstacknesteds-rootdeploymentbucket3b5e-wii9a6y5zbor/youtube-clone --acl bucket-owner-full-control
