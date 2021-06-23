@@ -8,7 +8,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "javascript-time-ago": "^2.3.7",
-    "material-design-icons": "^3.0.1",
     "millify": "^4.0.0",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
