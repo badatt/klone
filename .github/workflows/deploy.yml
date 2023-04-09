@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: 16.16.0
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.1.1
+
       - name: Installation of dependencies
         run: pnpm i
 
