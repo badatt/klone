@@ -10,7 +10,7 @@ function Main() {
           key={i}
           title={item.snippet.title}
           channel={item.snippet.channelTitle}
-          views={item.statistics.viewCount}
+          views={Number(item.statistics.viewCount)}
           thumbnails={item.snippet.thumbnails}
           publishedAt={item.snippet.publishedAt}
           duration={item.contentDetails.duration}

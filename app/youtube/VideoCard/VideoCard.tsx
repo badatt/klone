@@ -4,7 +4,16 @@ import momnent from 'moment';
 import TimeAgo from 'javascript-time-ago';
 import en from 'javascript-time-ago/locale/en';
 
-function VideoCard({ title, channel, views, when, thumbnails, publishedAt, duration }) {
+export interface IVideoCard {
+  title: string;
+  channel: string;
+  views: number;
+  thumbnails: any;
+  publishedAt: string;
+  duration: string;
+}
+
+function VideoCard({ title, channel, views, thumbnails, publishedAt, duration }: IVideoCard) {
   TimeAgo.addLocale(en);
   const timeAgo = new TimeAgo();
   return (
@@ -16,10 +25,10 @@ function VideoCard({ title, channel, views, when, thumbnails, publishedAt, durat
         </div>
         <div className="actions">
           <div>
-            <span class="material-icons">watch_later</span>
+            <span className="material-icons">watch_later</span>
           </div>
           <div>
-            <span class="material-icons">segment</span>
+            <span className="material-icons">segment</span>
           </div>
         </div>
       </div>
@@ -33,7 +42,7 @@ function VideoCard({ title, channel, views, when, thumbnails, publishedAt, durat
             <div className="channel-title">{channel}</div>
             {views > 1000000 && (
               <div className="verified">
-                <span class="material-icons">check_circle</span>
+                <span className="material-icons">check_circle</span>
               </div>
             )}
           </div>
@@ -43,7 +52,7 @@ function VideoCard({ title, channel, views, when, thumbnails, publishedAt, durat
           </div>
         </div>
         <div className="more">
-          <span class="material-icons icon">more_vert</span>
+          <span className="material-icons icon">more_vert</span>
         </div>
       </div>
     </div>

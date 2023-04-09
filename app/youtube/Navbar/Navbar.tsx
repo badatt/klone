@@ -117,7 +117,12 @@ const itemsList = [
   },
 ];
 
-function Item({ icon, text }) {
+export interface IItem {
+  icon: string;
+  text: string;
+}
+
+function Item({ icon, text }: IItem) {
   return (
     <div className={text === 'Home' ? 'item selected' : 'item'}>
       <div className="item-icon">

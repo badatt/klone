@@ -206,6 +206,7 @@ typings/
 
 # Next.js build output
 .next
+out/
 
 # Nuxt.js build / generate output
 .nuxt
@@ -278,3 +279,15 @@ node_modules
 .cdk.staging
 cdk.out
 cdk.context.json
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+
