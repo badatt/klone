@@ -1,4 +1,3 @@
-import './Main.scss';
 import data from './sample-yt-data';
 import VideoCard from '../VideoCard/VideoCard';
 

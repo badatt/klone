@@ -1,4 +1,3 @@
-import './VideoCard.scss';
 import millify from 'millify';
 import momnent from 'moment';
 import TimeAgo from 'javascript-time-ago';

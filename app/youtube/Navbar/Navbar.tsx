@@ -1,5 +1,3 @@
-import './Navbar.scss';
-
 const itemsList = [
   {
     title: '',

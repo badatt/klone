@@ -1,5 +1,4 @@
 import Logo from './youtube-icon';
-import './Header.scss';
 
 function Header() {
   return (
