@@ -34,9 +34,6 @@ function Header() {
           </button>
         </div>
       </div>
-      {/* <div className="suggestions">
-        <div className="chips">suggestion chips</div>
-      </div> */}
     </header>
   );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import './global.css';
 
 const Home = () => {
   return (

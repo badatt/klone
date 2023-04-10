@@ -1,16 +1,17 @@
-import { Fragment } from 'react';
+import './../global.css';
 import './App.css';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Navbar from './Navbar/Navbar';
+import React from "react";
 
 function App() {
   return (
-    <Fragment>
+    <div className="app yt">
       <Header />
       <Navbar />
       <Main />
-    </Fragment>
+    </div>
   );
 }
 

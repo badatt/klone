@@ -1,72 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-html {
-  height: 100%;
-}
-
-.material-icons {
-  font-family: 'Material Icons', serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-body {
-  margin: 0;
+.yt {
   font-family: 'Roboto', 'Noto', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff;
-  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-input,
-input:focus {
-  border: none;
-  outline: none;
-}
-
-button {
-  outline: none;
-  border: none;
-  background: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.app {
-  position: relative;
-}
-
-.header {
+.yt .header {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -76,14 +15,14 @@ a {
   opacity: .9
 }
 
-.header .main {
+.yt .header .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3.5rem
 }
 
-.header .main .banner {
+.yt .header .main .banner {
   display: flex;
   align-items: center;
   flex: .2 1;
@@ -91,12 +30,12 @@ a {
   padding-left: 20px
 }
 
-.header .main .banner .menu-icon {
+.yt .header .main .banner .menu-icon {
   color: #404040;
   cursor: pointer
 }
 
-.header .main .banner .yt-logo {
+.yt .header .main .banner .yt-logo {
   width: 9rem;
   padding: 0 20px;
   display: flex;
@@ -105,7 +44,7 @@ a {
   cursor: pointer
 }
 
-.header .main .banner .yt-logo:after {
+.yt .header .main .banner .yt-logo:after {
   content: "IN";
   font-size: .6rem;
   color: #404040;
@@ -114,7 +53,7 @@ a {
   position: relative
 }
 
-.header .main .search {
+.yt .header .main .search {
   display: flex;
   flex: .6 1;
   justify-content: center;
@@ -122,7 +61,7 @@ a {
   height: 2.5rem
 }
 
-.header .main .search .search-wrapper {
+.yt .header .main .search .search-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,11 +70,11 @@ a {
   border: 1px solid rgba(0, 0, 0, .1)
 }
 
-.header .main .search .search-wrapper:hover, .header .main .search .search-wrapper:hover .search-inp {
+.yt .header .main .search .search-wrapper:hover, .yt .header .main .search .search-wrapper:hover .search-inp {
   background-color: #f1f1f1
 }
 
-.header .main .search .search-wrapper .search-inp {
+.yt .header .main .search .search-wrapper .search-inp {
   border-radius: 2px;
   padding: .2rem .5rem;
   height: max-content;
@@ -146,11 +85,11 @@ a {
   width: 100%
 }
 
-.header .main .search .search-wrapper .search-inp:focus {
+.yt .header .main .search .search-wrapper .search-inp:focus {
   border: 1px solid #000
 }
 
-.header .main .search .search-wrapper .lens {
+.yt .header .main .search .search-wrapper .lens {
   color: #404040;
   background-color: #f1f1f1;
   width: 80px;
@@ -159,22 +98,22 @@ a {
   cursor: pointer
 }
 
-.header .main .search .search-wrapper .lens:hover {
+.yt .header .main .search .search-wrapper .lens:hover {
   background-color: #f1f1f1
 }
 
-.header .main .search .search-wrapper .lens .lens-icon {
+.yt .header .main .search .search-wrapper .lens .lens-icon {
   width: 1.2rem;
   height: 1.2rem
 }
 
-.header .main .search .mic {
+.yt .header .main .search .mic {
   color: #404040;
   padding-left: 20px;
   cursor: pointer
 }
 
-.header .main .action {
+.yt .header .main .action {
   display: flex;
   flex: .2 1;
   align-items: center;
@@ -184,13 +123,13 @@ a {
   padding-right: 16px
 }
 
-.header .main .action .btn {
+.yt .header .main .action .btn {
   color: #404040;
   margin-left: 20px;
   cursor: pointer
 }
 
-.header .main .action .signin {
+.yt .header .main .action .signin {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -203,26 +142,26 @@ a {
   width: 105px
 }
 
-.header .main .action .signin .icon {
+.yt .header .main .action .signin .icon {
   width: 28px;
   height: 28px
 }
 
-.header .suggestions {
+.yt .header .suggestions {
   display: flex;
   height: 3.5rem;
   width: calc(100% - 15rem);
   align-self: flex-end
 }
 
-.header .suggestions .chips {
+.yt .header .suggestions .chips {
   width: 100%;
   height: 100%;
   border-top: 1px solid rgba(0, 0, 0, .1);
   border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
-.main-content {
+.yt .main-content {
   position: absolute;
   display: flex;
   top: 3.5rem;
@@ -233,24 +172,24 @@ a {
   background-color: #f1f1f1
 }
 
-.video-card {
+.yt .video-card {
   display: flex;
   flex-direction: column;
   margin: 8px;
   cursor: pointer
 }
 
-.video-card .thumbnail {
+.yt .video-card .thumbnail {
   width: 260px;
   position: relative
 }
 
-.video-card .thumbnail .image {
+.yt .video-card .thumbnail .image {
   width: 100%;
   height: 100%
 }
 
-.video-card .thumbnail .duration {
+.yt .video-card .thumbnail .duration {
   position: absolute;
   font-size: .75rem;
   bottom: 5px;
@@ -261,32 +200,32 @@ a {
   border-radius: 2px
 }
 
-.video-card .thumbnail .actions {
+.yt .video-card .thumbnail .actions {
   display: none
 }
 
-.video-card .content {
+.yt .video-card .content {
   width: 260px;
   display: flex;
   margin: 12px 0 20px
 }
 
-.video-card .content .avatar {
+.yt .video-card .content .avatar {
   flex: .2 1
 }
 
-.video-card .content .avatar img {
+.yt .video-card .content .avatar img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   margin: 5px 0 0 5px
 }
 
-.video-card .content .data {
+.yt .video-card .content .data {
   flex: .7 1
 }
 
-.video-card .content .data .title {
+.yt .video-card .content .data .title {
   font-size: .9rem;
   font-weight: 500;
   overflow: hidden;
@@ -297,12 +236,12 @@ a {
   -webkit-box-orient: vertical
 }
 
-.video-card .content .data .channel {
+.yt .video-card .content .data .channel {
   display: flex;
   align-items: center
 }
 
-.video-card .content .data .channel .channel-title {
+.yt .video-card .content .data .channel .channel-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
@@ -314,7 +253,7 @@ a {
   margin-top: 8px
 }
 
-.video-card .content .data .channel .verified span {
+.yt .video-card .content .data .channel .verified span {
   font-size: .8rem;
   color: #404040;
   position: relative;
@@ -322,7 +261,7 @@ a {
   left: 4px
 }
 
-.video-card .content .data .stats {
+.yt .video-card .content .data .stats {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -330,7 +269,7 @@ a {
   color: #404040
 }
 
-.video-card .content .data .stats .views:after {
+.yt .video-card .content .data .stats .views:after {
   content: ".";
   font-size: 1.2rem;
   line-height: 10px;
@@ -340,7 +279,7 @@ a {
   bottom: 5px
 }
 
-.video-card .content .more {
+.yt .video-card .content .more {
   display: none
 }
 
@@ -380,7 +319,7 @@ a {
   color: #404040
 }
 
-.navbar {
+.yt .navbar {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -389,67 +328,67 @@ a {
   top: 3.5rem
 }
 
-.navbar .navbar-content {
+.yt .navbar .navbar-content {
   overflow-y: hidden;
   padding-top: 8px
 }
 
-.navbar .navbar-content:hover {
+.yt .navbar .navbar-content:hover {
   overflow-y: scroll;
   scrollbar-color: #a5a5a5 #fff;
   scrollbar-width: thin
 }
 
-.navbar .navbar-content::-webkit-scrollbar {
+.yt .navbar .navbar-content::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: #ffffff
 }
 
-.navbar .navbar-content::-webkit-scrollbar-thumb {
+.yt .navbar .navbar-content::-webkit-scrollbar-thumb {
   background: #a5a5a5
 }
 
-.navbar .navbar-content .item-group .divider {
+.yt .navbar .navbar-content .item-group .divider {
   border-bottom: 1px solid rgba(0, 0, 0, .1);
   margin: 8px 0
 }
 
-.navbar .navbar-content .item-group .item {
+.yt .navbar .navbar-content .item-group .item {
   display: flex;
   align-items: center;
   padding: 6px 20px;
   cursor: pointer
 }
 
-.navbar .navbar-content .item-group .item.selected {
+.yt .navbar .navbar-content .item-group .item.selected {
   background-color: #e5e5e5;
   font-weight: 700
 }
 
-.navbar .navbar-content .item-group .item.selected .item-icon {
+.yt .navbar .navbar-content .item-group .item.selected .item-icon {
   color: red
 }
 
-.navbar .navbar-content .item-group .item.selected:hover {
+.yt .navbar .navbar-content .item-group .item.selected:hover {
   background-color: #d9d9d9
 }
 
-.navbar .navbar-content .item-group .item:hover {
+.yt .navbar .navbar-content .item-group .item:hover {
   background-color: #f2f2f2
 }
 
-.navbar .navbar-content .item-group .item-icon {
+.yt .navbar .navbar-content .item-group .item-icon {
   color: #404040
 }
 
-.navbar .navbar-content .item-group .item-text {
+.yt .navbar .navbar-content .item-group .item-text {
   vertical-align: middle;
   font-size: .9rem;
   padding-left: 20px
 }
 
-.navbar .navbar-content .item-group .item-title {
+.yt .navbar .navbar-content .item-group .item-title {
   text-transform: uppercase;
   font-size: .9rem;
   font-weight: 500;
